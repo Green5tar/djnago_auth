@@ -1,0 +1,34 @@
+
+{% extends 'base/main.html' %}
+{% block content %}
+<h1>Task: {{task}}</h1>
+
+<table>
+
+    <tr>
+        <th>
+            Item
+        </th>
+        <th>
+            Descritprion
+        </th>
+        <th>
+            Complete
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            {{task.title}}
+        </td>
+        <td>
+            {{task.descritprion}}
+        </td>
+        <td>
+            {{task.complete}}
+        </td>
+
+    </tr>
+
+</table>
+{% endblock content %}
